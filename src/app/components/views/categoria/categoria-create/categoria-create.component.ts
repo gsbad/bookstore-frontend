@@ -29,6 +29,11 @@ export class CategoriaCreateComponent {
       }
     })
   }
+
+  cancelar():void{
+    this.router.navigate(['categorias']);
+  }
+
 }
 
 

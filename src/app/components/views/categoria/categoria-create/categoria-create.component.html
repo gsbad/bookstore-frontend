@@ -12,7 +12,7 @@
     
         <div class="buttons">
             <button (click)="create()" mat-raised-button color="raised" class="botao">Criar [ + ]</button>
-            <button mat-raised-button color="warn" class="botao">Cancelar [ - ]</button>
+            <button mat-raised-button color="warn" (click)="cancelar()" class="botao">Cancelar [ - ]</button>
         </div>        
     </div>
 </form>
