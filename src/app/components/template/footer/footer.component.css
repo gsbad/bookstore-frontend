@@ -1,0 +1,9 @@
+.footer{
+    justify-content: center; 
+    height: 15%; box-shadow: 0 0 10px #000; 
+    background-color: #242325; 
+    position: fixed; bottom: 0; 
+    justify-content: flex-end; 
+    height: 5%;
+    color: #fff;
+} 
