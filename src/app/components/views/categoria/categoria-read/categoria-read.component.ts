@@ -12,23 +12,23 @@ export class CategoriaReadComponent {
 
   categorias: Categoria[] = []
 
-  displayedColumns: string[] = ['id', 'nome', 'descricao', 'livros', 'acoes'];
+  displayedColumns: string[] = ['id', 'nome', 'descricao', 'livros', 'acoes']
 
   constructor(private service: CategoriaService , private router: Router){}
 
   ngOnInit(): void {
-    this.findAll();
+    this.findAll()
   }
 
   findAll(){
     this.service.findAll().subscribe(resposta => {
       //console.log(resposta)
-      this.categorias = resposta;
+      this.categorias = resposta
     })
   }
 
   navegarParaCategoriaCreate(){
-    this.router.navigate(["categorias/create"]);
+    this.router.navigate(["categorias/create"])
   }
 
 
