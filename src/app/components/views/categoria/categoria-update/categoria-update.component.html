@@ -1,0 +1,18 @@
+<form>
+    <div class="corpo">
+        <h1>EDITAR categoria</h1>
+        <mat-form-field class="form">
+            <mat-label>Nome</mat-label>
+            <input type="text" matInput name="nome" [(ngModel)]="categoria.nome">
+        </mat-form-field>
+        <mat-form-field class="form">
+            <mat-label>Descrição</mat-label>
+            <textarea type="textarea" matInput name="descricao" [(ngModel)]="categoria.descricao"></textarea>
+        </mat-form-field>    
+    
+        <div class="buttons">
+            <button mat-raised-button color="raised" class="botao" (click)="update()">Confirmar ediçao [ + ]</button>
+            <button mat-raised-button color="warn" class="botao" (click)="cancelar()">Cancelar [ - ]</button>
+        </div>        
+    </div>
+</form>

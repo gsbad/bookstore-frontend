@@ -2,32 +2,27 @@
     
     
     <div class="title">
-        <h1>Categorias</h1>
+        <h1>Livros</h1>
     </div>
     
-    <button mat-raised-button color="raised" class="botao" (click)="navegarParaCategoriaCreate()">Nova categoria [ + ]</button>
+    <button mat-raised-button color="raised" class="botao">Novo livro [ + ]</button>
 
     <div class="mat-elevation-z8 content-table">
-        <table class="table" mat-table [dataSource]="categorias">
+        <table class="table" mat-table [dataSource]="livros">
             <ng-container matColumnDef="id">
               <th mat-header-cell *matHeaderCellDef> ID </th>
               <td mat-cell *matCellDef="let row"> {{row.id}} </td>
             </ng-container>
           
             <ng-container matColumnDef="nome">
-              <th mat-header-cell *matHeaderCellDef> NOME </th>
-              <td mat-cell *matCellDef="let row"> {{row.nome}} </td>
-            </ng-container>
-          
-            <ng-container matColumnDef="descricao">
-              <th mat-header-cell *matHeaderCellDef> DESCRIÇÃO </th>
-              <td mat-cell *matCellDef="let row"> {{row.descricao}} </td>
+              <th mat-header-cell *matHeaderCellDef> TÍTULO </th>
+              <td mat-cell *matCellDef="let row"> {{row.titulo}} </td>
             </ng-container>
 
             <ng-container matColumnDef="livros">
-              <th mat-header-cell *matHeaderCellDef> LIVROS </th>
+              <th mat-header-cell *matHeaderCellDef> LER LIVRO </th>
               <td mat-cell *matCellDef="let row">
-                <a routerLink="{{ row.id }}/livros" class="book"><i class="material-icons livros">book</i></a>
+                <a class="book"><i class="material-icons livros">book</i></a>
               </td>
             </ng-container>
           
@@ -35,8 +30,8 @@
               <th class="mat-header" *matHeaderCellDef> AÇÕES </th>
               <td mat-cell *matCellDef="let row">
                 <!-- itens de manipulaçao -->
-                <a href="#" class="edit" routerLink="update/{{row.id}}"><i class="material-icons">edit</i></a>
-                <a class="delete" routerLink="delete/{{row.id}}"><i class="material-icons">delete</i></a>               
+                <a href="#" class="edit" href="#"><i class="material-icons">edit</i></a>
+                <a class="delete" href="#"><i class="material-icons">delete</i></a>               
               </td>
             </ng-container>
           
