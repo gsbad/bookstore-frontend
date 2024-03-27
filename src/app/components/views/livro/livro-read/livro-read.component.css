@@ -1,0 +1,42 @@
+form{
+    width: 95%;
+    margin: 1rem auto;
+    padding: 1.1rem;
+}
+
+@media(max-width: 450px){
+    form{
+        width: 70%;
+    }
+}
+@media(max-width: 770px){
+    form{
+        width: 90%;
+    }
+}
+
+.home{
+    text-align: center;
+    align-items: center;
+    background-color: rgb(119, 115, 110);
+    color: beige;
+    -webkit-box-shadow: 0px 11px 7px -3px rgba(0,0,0,0.48);
+    -moz-box-shadow: 0px 11px 7px -3px rgba(0,0,0,0.48);
+    box-shadow: 0px 11px 7px -3px rgba(0,0,0,0.48);
+}
+.home > button{
+    width: 100%;
+}
+.centraliza{
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+.corpo{
+    width: 88%;
+    margin-top: .4em;
+    font-size: 1.1em;
+    padding:.6em;
+    align-self: center;
+    display: inline-block;
+}
