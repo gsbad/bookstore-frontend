@@ -10,7 +10,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class LivroReadAllComponent {
 
-  displayedColumns: string[] = ['id', 'nome', 'livros', 'acoes']
+  displayedColumns: string[] = ['id', 'nome', 'nome_autor','livros', 'acoes']
   
   id_cat: String = ''
 
