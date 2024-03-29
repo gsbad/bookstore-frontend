@@ -1,4 +1,4 @@
 export const environment = {
-    production: false,
-    baseUrl: "http://54.226.255.220:8080/"
+    production: true,
+    baseUrl: "https://javasb.gustavosa.dev/api"
 };
