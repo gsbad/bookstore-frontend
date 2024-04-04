@@ -1,4 +1,19 @@
 .container{ height: 80%; background-color: #dbd9d8;}
 .menu{background-color: #c7c7c7;}
+.home{margin-top: 50px;}
 i{padding-right: .2em;}
 .mdc-list{padding:0;}
+
+.menu-button {
+    display: none;
+    position: absolute;
+}
+  
+  /* Mostra o botão de ícone de menu quando a janela é redimensionada para menos que 500px */
+  @media screen and (max-width: 560px) {
+
+    .menu-button {
+      display: block;
+    }
+  
+  }
