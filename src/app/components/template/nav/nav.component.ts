@@ -32,6 +32,7 @@ export class NavComponent {
       this.setDrawerMode(event.target.innerWidth);
     }
   }
+
   
   setDrawerMode(windowWidth: number) {
     if (windowWidth < 560) {
@@ -50,4 +51,12 @@ export class NavComponent {
       }
     }
   }
+
+  closeSidenavIfOverMode() {
+    alert('closeSidenavIfOverMode() foi chamado');
+    if (this.drawerMode === 'over' && this.isMenuOpen) {
+      this.isMenuOpen = false;
+    }
+  }
+
 }

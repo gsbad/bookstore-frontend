@@ -2,7 +2,7 @@
 
    
     <!-- Mat-sidenav que contém o menu -->
-    <mat-sidenav #sidenav mode="side" [opened]="isMenuOpen" [mode]="drawerMode" fixedTopGap="64" autosize="true"  class="menu" hasBackdrop="false" disableClose="true">
+    <mat-sidenav #sidenav mode="side" [opened]="isMenuOpen" [mode]="drawerMode" fixedTopGap="64" autosize="true"  class="menu" disableClose="false" hasBackdrop="true">
         <!-- Botão de ícone de menu para abrir o sidenav quando estiver em modo 'over' -->
         <button mat-icon-button (click)="toggleMenu()" class="menu-button">
             <mat-icon>menu</mat-icon>
