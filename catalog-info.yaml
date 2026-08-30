@@ -1,0 +1,19 @@
+# Metadado do Backstage Software Catalog.
+#
+# Este arquivo é lido pelo Backstage, mas a aplicação NÃO depende dele para
+# rodar. Catalogado na Grande Consolidação (2026-08-30) — metadado mínimo,
+# sem TechDocs/API Catalog: não verificado se há docs/ ou OpenAPI reais
+# neste projeto, não inventar o que não foi confirmado.
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: bookstore-frontend
+  description: Frontend da bookstore-api (TypeScript) — projeto de estudo
+  annotations:
+    github.com/project-slug: gsbad/bookstore-frontend
+  tags:
+    - typescript
+spec:
+  type: website
+  lifecycle: experimental
+  owner: gsbad
